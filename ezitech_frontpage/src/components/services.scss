@@ -1,0 +1,55 @@
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    
+
+    .services-row {
+        margin: 30px 50px;
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin: 20px;
+        }
+
+        .vector-image {
+            
+            width: 200px;
+            height: 150px;
+            margin: 0 50px;
+            margin-bottom: 30px;
+        }
+
+        &.grid-layout {
+            
+            display: grid;
+            grid-template-columns: repeat(6, minmax(0, 1fr)); // Exactly 6 columns
+            gap: 20px; 
+            width: 80%; 
+            margin: 0 auto; 
+
+            .grid-item {
+              
+                
+                background-color: #fff;
+                padding: 30px;
+                border: 1px solid #ddd;
+                border-radius: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.318);
+                transition: transform 0.3s, box-shadow 1s;
+
+                &:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+
+                .grid-image {
+                    width: 80px;
+                    height: 80px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
